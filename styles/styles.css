@@ -1,0 +1,446 @@
+:root{
+  --green-color: #9AC488;
+  --blackText-clor: #3B3B3B;
+  --white-color: #fff;
+  --blueAqua--color: #81C5E7;
+  --green-text-color: #40584A;
+  --green-fondo-icons: #D6E7CF;
+}
+
+@font-face {
+  font-family: FuturaLT-Book;
+  src: url(../assets/font/FuturaLT-Book.ttf);
+}
+
+@font-face {
+  font-family: IntroScriptR-H2Base;
+  src: url(../assets/font/IntroScriptR-H2Base.otf);
+}
+
+@font-face {
+  font-family: FuturaLT-Oblique;
+  src: url(../assets/font/FuturaLT-Oblique.ttf)
+}
+
+@font-face {
+  font-family: CondensedBold;
+  src: url(../assets/font/FuturaLT.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* body{
+
+} */
+
+/* head................... */
+
+.header__container{
+  padding: 30px 100px;
+}
+
+.header__title_eng{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: var(--green-color);
+  font-family: FuturaLT-Book;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.header__content_navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__image_content img{
+  width: 100%;
+}
+
+.nav__content {
+  width: 100%;
+}
+
+.nav__content ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__content ul li{
+  margin-left: 35px;
+  list-style: none;
+  color: var(--blackText-clor)
+}
+
+.nav__content ul li a{
+  text-decoration: none;
+  font-family: FuturaLT-Book;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.text__navAncla{
+  color: var(--blackText-clor);
+}
+
+.variedades__content{
+  width: 100px;
+  background-color: var(--green-color);
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--white-color);
+}
+
+.insumos__content{
+  background-color: var(--blueAqua--color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* section 1...................... */
+
+.semillas__container{
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(142, 142, 142, 0.3);
+  background-image: url('../assets/img/portada.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.semilla__backgorund_content{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(142, 142, 142, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.semillas__container p{
+  width: 50%;
+  text-align: center;
+  font-family: IntroScriptR-H2Base;
+  font-size: 65px;
+  font-weight: 100;
+  color: var(--white-color);
+}
+
+/* variedades.................. */
+
+.variedades__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+}
+
+.variedades__title{
+  color: var(--blackText-clor);
+}
+
+.variedades__title p{
+  font-family: FuturaLT-Oblique;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.variedades__navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.icon__navbar{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 800;
+  background-color: var(--green-color);
+}
+
+.icon__navbar img{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.variedades__iconNext img{
+  width: 15px;
+  height: 15px;
+}
+
+/* filosofia......... */
+.filosofia__container{
+  width: 100%;
+  height: 70vh;
+  background-image: url('../assets/img/insumos.jpg');
+  background-size: cover;
+}
+
+.filosofia__backgorund_content{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(142, 142, 142, 0.3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filosofia__text_content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.filosofia__text_content h1{
+  max-width: 70%;
+  color: var(--white-color);
+  font-family: IntroScriptR-H2Base;
+  font-size: 65px;
+  font-weight: 100;
+}
+
+.filosofia__text_content p{
+  max-width: 70%;
+  color: var(--white-color);
+  font-size: 21px;
+  font-weight: 100;
+  font-family: FuturaLT-Book;
+  margin-top: 10px;
+}
+
+.filosofia__text_content button{
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: FuturaLT-Book;
+  cursor: pointer;
+}
+
+/* publicidad y eventos..................... */
+
+.eventos__container{
+  padding: 25px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventos__title p{
+  color: var(--blackText-clor);
+  font-family: FuturaLT-Oblique;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+.cardsEvent__container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.cards__content{
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.cards__content img{
+  width: 100%;
+}
+
+.cards__content h3{
+  font-family: CondensedBold;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--green-color);
+  margin-top: 20px;
+}
+
+.cards__content p{
+  color: var(--blackText-clor);
+  margin-top: 20px;
+  font-family: FuturaLT-Book;
+  line-height: 35px;
+}
+
+.cards__content button{
+  width: 180px;
+  height: 50px;
+  background-color: var(--green-color);
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: FuturaLT-Book;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* contacto............... */
+
+
+.contact__container{
+  padding: 25px 100px;
+  background-color: var(--green-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__content{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.phone{
+  display: flex;
+  color: var(--green-text-color);
+}
+
+.icon__text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.icon__text_h4{
+  border-bottom: 2px dotted var(--green-text-color);
+}
+
+.content__icon{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-fondo-icons);
+}
+
+.content__icon img{
+  width: 12px;
+  height: 12px;
+}
+
+.email{
+  display: flex;
+  color: var(--green-text-color);
+}
+
+
+.location{
+  display: flex;
+  color: var(--green-text-color);
+}
+
+.content__icon__location{
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--green-fondo-icons);
+}
+
+.content__icon__location img{
+  width: 12px;
+  height: 12px;
+}
+
+.social__media{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.social__title{
+  color: var(--green-text-color);
+}
+
+.social__icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon__face{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-fondo-icons);
+}
+
+.icon__face img{
+  width: 12px;
+  height: 12px;
+}
+
+.icon__twitter{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-fondo-icons);
+}
+
+.icon__twitter img{
+  width: 12px;
+  height: 12px;
+}
+/* footer........... */
+
+.footer__container{
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blackText-clor);
+  padding: 0px 45px;
+}
+
+.text__year{
+  color: var(--green-color);
+}
+
+.text__company{
+  color: var(--green-color);
+}

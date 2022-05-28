@@ -149,6 +149,7 @@
 
 .variedades__title{
   color: var(--blackText-clor);
+  padding: 30px 0;
 }
 
 .variedades__title p{
@@ -157,36 +158,93 @@
   font-size: 30px;
 }
 
-.variedades__navbar{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-.icon__navbar{
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: var(--white-color);
-  font-size: 24px;
-  font-weight: 800;
-  background-color: var(--green-color);
-}
-
-.icon__navbar img{
-  width: 30px;
-  height: 30px;
-  fill: #fff;
-}
-
 .variedades__iconNext img{
   width: 15px;
   height: 15px;
 }
+
+.carousel__flowers{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flowers__imgContent{
+  width: 220px;
+  height: 220px;
+  background-image: url('../assets/img/flor1.png');
+  background-size: cover;
+}
+.flowers__imgContent2{
+  width: 220px;
+  height: 220px;
+  background-image: url('../assets/img/flor2.png');
+  background-size: cover;
+}
+.flowers__imgContent3{
+  width: 220px;
+  height: 220px;
+  background-image: url('../assets/img/flor3.png');
+  background-size: cover;
+}
+.flowers__imgContent4{
+  width: 220px;
+  height: 220px;
+  background-image: url('../assets/img/flor1.png');
+  background-size: cover;
+}
+
+.flower__text_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.flower__text_content:hover{
+  background-color: rgba(1, 1, 1, 0.5);
+
+}
+
+.border__context{
+  width: 85%;
+  height: 85%;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border__context:hover{
+  width: 85%;
+  height: 85%;
+  border: 1px solid var(--white-color);
+}
+
+.border__context button{
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: FuturaLT-Book;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.border__context button:hover{
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
 
 /* filosofia......... */
 .filosofia__container{
@@ -318,7 +376,7 @@
 }
 
 .contact__content{
-  max-width: 300px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -334,6 +392,8 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 50px;
+  font-family: FuturaLT-Book;
+  letter-spacing: 2px;
 }
 
 .icon__text_h4{
@@ -351,8 +411,8 @@
 }
 
 .content__icon img{
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 .email{
@@ -377,8 +437,8 @@
 }
 
 .content__icon__location img{
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 .social__media{
@@ -390,6 +450,8 @@
 
 .social__title{
   color: var(--green-text-color);
+  font-family: FuturaLT-Book;
+  letter-spacing: 1px;
 }
 
 .social__icons{
@@ -408,8 +470,8 @@
 }
 
 .icon__face img{
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 .icon__twitter{
@@ -423,8 +485,8 @@
 }
 
 .icon__twitter img{
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 /* footer........... */
 
@@ -435,6 +497,10 @@
   align-items: center;
   background-color: var(--blackText-clor);
   padding: 0px 45px;
+  font-family: FuturaLT-Book;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 19px;
 }
 
 .text__year{
